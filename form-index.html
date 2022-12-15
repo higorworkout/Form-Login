@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Camp form</title>
+</head>
+<body>
+
+    <main>
+    <!--Left left form from page.. -->
+     <div class="sideForm">
+        <div class="logo">
+            <img src="assets/images/logo.svg" alt="logo">
+        </div>
+
+        <div class="container">
+            
+            <div class="title">
+                <img src="assets/images/log-in.svg" alt="Login svg">
+                Faça seu login</div>
+
+            <div class="textT"> Entre com suas informações de cadastro </div> 
+                <!--Form-->
+            <form action="#">
+                <!--Field de info-->
+                <div class="input-field">
+                    <label for="femail" class="details">E-mail</label>
+                    <input type="email" name="femail" id="femail" placeholder="Digite seu e-mail" required>
+                    <label for="passwd" class="details">Senha</label>
+                    <div class="passwdF">
+                        <input type="password" name="passwd" id="passwd" placeholder="Digite sua senha" required>
+                        <span class="lnr lnr-eye"><img src="assets/images/eye.svg" alt="eye" class="changeImg"></span>
+                    </div>
+                </div>
+                <!--End-->
+                <!--Remember and forgot-->
+                <div class="remForgot">
+
+                    <div class="d-flex fir">
+                        
+                        <label class="container2">Lembre-me
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                          </label>
+                    </div>
+                    
+                    <a href="#" class="link">Esqueci minha senha</a>
+                </div>
+
+                <!--Button-->
+                <div class="button">
+                    <input type="submit" value="ENTRAR">
+                </div>
+                <!--End-->
+
+                <!--Not a account-->
+                <div class="notAccount">
+                    Não tem uma conta?
+                    <a href="#" onclick="document.getElementById('id01').style.display='block'"> Registre-se </a>
+                </div>   
+             </form>
+            <!--End form-->
+         </div>
+    </div>
+     <!--Left side image from page... -->
+     <div class="sideImage">
+         <img src="assets/images/side-image-2x.jpg" alt="Image car and nature">
+     </div>  
+</main>
+
+
+     <!--Modal Form -->
+<div id="id01" class="modal">
+        
+        <!--Fecha o formulario-->
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+         <!--Form-->
+    <form class="modal-content" action="/action_page.php">
+        <div class="container">
+            <h1>Sign Up</h1>
+            <p style="color: black;margin-bottom:20px ;">Por favor preencha esse formulário para criar uma conta.</p>
+            <hr>
+
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" placeholder="Enter Email" name="email" id="emailm" required>
+
+            <label for="psw"><strong>Password</strong></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+            <label for="psw-repeat"><strong>Repeat Password</strong></label>
+            <input type="password" placeholder="Repeat Password" id="psw" name="psw-repeat" required>
+
+            <label style="color: black;">
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;" id="checkRem"> Remember me 
+            </label>
+
+            <p style="color: black;">By creating an account you agree to our <a href="#" style="color:#ffc632;">Terms & Privacy</a>.</p>
+
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+
+            </div>
+
+
+        </div>
+
+    </form>
+
+</div>
+
+     <!--End-->
+
+     <script src="code.js"></script>
+</body>
+</html>
